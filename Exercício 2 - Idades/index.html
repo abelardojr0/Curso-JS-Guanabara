@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercício | Idade</title>
+</head>
+
+<body>
+  <header>
+    <h1>Verificador de Idade</h1>
+  </header>
+  <section>
+    <div>
+      <form class="formulario" action="">
+        <div>
+          <label for="idade">Ano de nascimento:</label>
+          <input data-nascimento type="number" name="idade" id="idade" min="0">
+        </div>
+        <div>
+          <label for="sexo">Sexo: </label>
+          <input data-sexo="m" type="radio" name="radsex" id="masculino" checked>
+          <label for="masculino">Masculino</label>
+          <input data-sexo="f" type="radio" name="radsex" id="femenino">
+          <label for="femenino">Femenino</label>
+        </div>
+        <div>
+          <button data-botao class="botao" type="button">Verificar</button>
+        </div>
+      </form>
+    </div>
+
+    <div data-resultado class="imagem">
+      <p data-texto>Digite seu ano de nascimento para verificar a idade</p>
+    </div>
+  </section>
+  <footer>&copy; Abelardo Júnior</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

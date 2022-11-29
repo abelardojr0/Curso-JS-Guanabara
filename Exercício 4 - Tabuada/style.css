@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  margin-bottom: 20px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+  height: 100vh;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section {
+  background-color: rgb(29, 190, 190);
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.formulario {
+  background-color: rgb(29, 190, 190);
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  gap: 20px;
+}
+input {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid black;
+  padding: 5px;
+}
+.itens {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  text-align: center;
+  border: 2px solid black;
+}
+.itens:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+textarea {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 0.7;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgb(40, 197, 197);
+  color: black;
+  display: none;
+}
+textarea.ativo {
+  display: block;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resultado p {
+  text-align: center;
+}
+footer {
+  margin-top: 20px;
+  font-style: italic;
+}

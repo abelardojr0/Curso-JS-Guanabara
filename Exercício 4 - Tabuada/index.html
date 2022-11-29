@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercício | Tabuada</title>
+</head>
+
+<body>
+  <header>
+    <h1>Gerador de tabuada</h1>
+  </header>
+  <section>
+    <div>
+      <form class="formulario" action="">
+        <div>
+          <label for="numero">Número</label>
+          <input data-numero type="number" name="numero" id="numero" min="0">
+        </div>
+        <div>
+          <button data-botao class="itens" type="button">Gerar</button>
+          <select data-operadores class="itens" name="operador" id="operador">
+            <option data-operador="+" value="selecao"> Selecione a operação</option>
+            <option value="soma"> Somar (+)</option>
+            <option value="subtracao">Subtrair (-)</option>
+            <option value="multiplicacao">Multiplicar (*)</option>
+            <option value="divisao">Dividir (/)</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="resultado">
+      <p data-texto>Digite um número e escolha uma operação</p>
+      <textarea disabled data-tabuada name="tabuada" id="tabuada" cols="25" rows="21"></textarea>
+    </div>
+  </section>
+  <footer>&copy; Abelardo Júnior</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
